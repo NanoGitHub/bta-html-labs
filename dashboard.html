@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="cyslabs@gmail.com">
+  <title>WingKaL4bs - Cyber Segurity Laboratory</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">WINGKALABS</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="dashboard.php">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="ejercicios.php">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Ejercicios</span>
+          </a>
+        </li>
+       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="servicios.php">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Servicios</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="dashboard.php">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Inicio</li>
+      </ol>
+      <div class="row">
+       
+	    <!-- /.div panel group -->
+            <div class="col-sm-7"> <!-- /.row col 7-->
+             <div class="card bg-light border-primary">
+                <div class="">
+                <div class="card-header"><h4>Estado del Servidor</h4></div>
+                   <div class="card-body"><br>
+                        CPU <div class="progress">
+  				<div id="usocpu" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+  				 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                 40% CPU
+  		      		</div>
+			    </div>
+                        <br>RAM <span id="ram1"></span> <span id="ram2"></span> <span id="ram3"></span>
+			    <div class="progress">
+  				<div id="usoram" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+  				 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                 40% CPU
+  		      	        </div>
+			   </div>
+                        <br>Disco Duro <span id="disk1"></span> <span id="disk2"></span> <span id="disk3"></span>
+			   <div class="progress">
+  				<div id="usodisk" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+  				 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                 40% CPU
+  		      		</div>
+			   </div><br>
+
+                   </div>
+                 </div>
+              </div><!-- /.div card group -->
+            </div><!-- /.row col 7 --> 
+
+            <div class="col-sm-5"> <!-- /.row col 5 --> 
+               <div class="card bg-light border-primary">
+   		  <div class="card-header"><h4>Estado de la Red</h4></div>
+  		  <div class="card-body">
+  		   <div class="table-responsive">
+                       <table class="table ">
+                        <tr>
+                	  <td>IP LAN : <td/><td><span id="iplan"><span/><td/>
+            		<tr/>
+			<tr>
+			  <td>Mascara : <td/><td><span id="ipmasc"><span/><td/>
+			<tr/>
+			<tr>
+			  <td>Puerta Enlace : <td/><td><span id="gwt"><span/><td/>
+			<tr/>
+			<tr>
+			  <td>Internet : <td/><td><span id="conect"><span/><td/>
+			<tr/>
+		       </table> 
+			 
+     		    </div> 
+                  </div>
+		</div>
+	    </div> <!-- /.row col 5 --> 
+           
+            <div class="col-sm-12"> <!-- /.row col 12 -->  <br>
+               <div class="card bg-light border-primary">
+   		  <div class="card-header"><h4>Conexiones de Red activas</h4></div>
+  		  <div class="card-body">
+  		   <div class="table-responsive">
+                       <table class="table" id="ractivas">
+                        
+		       </table>  
+     		    </div> 
+                  </div>
+		</div>
+	    </div> <!-- /.row col 12 --> 
+
+          
+	</div><!-- /.row panel group-->       
+
+        
+
+
+    </div><br>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>WingKaL4bs - GNU General Public License v3.0</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+<script type="text/javascript">
+function rangos(rango){
+	atributo="progress-bar progress-bar-striped progress-bar-success";
+	if (rango<=60){
+	  atributo="progress-bar progress-bar-striped progress-bar-success";
+	}
+	if (rango>60 && rango<=85){
+	  atributo="progress-bar progress-bar-striped progress-bar-warning";
+	}
+	if (rango>85 && rango<=150){
+	  atributo="progress-bar progress-bar-striped progress-bar-danger";
+	}
+return atributo;
+}
+function redestadocolor(st){
+	color="";
+	if(st=="Conectado"){color = "<span style='color:green'>"+st+"</span>";}
+        if(st=="Desconectado"){color = "<span style='color:red'>"+st+"</span>";}
+return color;
+}
+function buscar_control(){
+
+ $.ajax({
+        type: "GET",
+        url: "utils/server.php",
+        success: function(response){
+         obj = JSON.parse(response);
+          //cpu
+           
+           $( "#usocpu" ).attr( "aria-valuenow", obj.cpu );
+           $( "#usocpu" ).attr( "style", "width:"+obj.cpu + "%");
+           $( "#usocpu" ).attr( "class", rangos(obj.cpu));
+           $( "#usocpu" ).html("CPU "+obj.cpu +"% usado")
+ 	 //ram
+           $( "#usoram" ).attr( "aria-valuenow", obj.ram );
+           $( "#usoram" ).attr( "style", "width:"+obj.ram + "%");
+	   $( "#usoram" ).attr( "class", rangos(obj.ram));
+           $( "#usoram" ).html("RAM "+obj.ram +"% usado")
+           $( "#ram1" ).html("&nbsp;&nbsp;Total : "+ obj.mem_total);
+           $( "#ram2" ).html("&nbsp;&nbsp;En Uso : "+ obj.mem_used);
+	   $( "#ram3" ).html("&nbsp;&nbsp;Libre : "+ obj.mem_free);
+          //disk
+           $( "#usodisck" ).attr( "aria-valuenow", obj.disk_porcj );
+           $( "#usodisk" ).attr( "style", "width:"+obj.disk_porcj + "%");
+	   $( "#usodisk" ).attr( "class", rangos(obj.disk_porcj));
+           $( "#usodisk" ).html("Disco Duro "+obj.disk_porcj +"% usado")
+           $( "#disk1" ).html("&nbsp;&nbsp;Total : "+ obj.tdisco);
+           $( "#disk2" ).html("&nbsp;&nbsp;En Uso : "+ obj.tutilizado);
+	   $( "#disk3" ).html("&nbsp;&nbsp;Libre : "+ obj.tlibre);
+	  // red
+           $( "#iplan" ).html("&nbsp;"+ obj.iplan);
+           $( "#ipmasc" ).html("&nbsp;"+ obj.masc);
+	   $( "#gwt" ).html("&nbsp;"+ obj.gwt);
+           $( "#conect" ).html("&nbsp;"+ redestadocolor(obj.internet));
+
+
+         }
+  });
+
+}
+
+
+
+function buscar_conexionesred(){
+ tabla ="";
+ tabla +="<tr><td>Protocolo</td><td>Local</td><td>Remoto</td><td>Estado</td></tr>";
+ $.ajax({
+        type: "GET",
+        url: "utils/establecidas.php",
+        success: function(respuesta){
+          obj = JSON.parse(respuesta);
+          
+          for(var i=0; i<obj.length -1 ;i++){
+              res = obj[i].split(" ");
+              tabla +="<tr><td>"+ res[0]+"</td><td>"+ res[1]+"</td><td>"+ res[2]+"</td><td>"+ res[3]+"</td></tr>";
+          }
+         $("#ractivas").html(tabla);
+         }
+  });
+
+}
+
+
+
+$(document).ready(function(){
+   buscar_control();
+   buscar_conexionesred();
+   setInterval('buscar_control()',3000);
+   setInterval('buscar_conexionesred()',3000);
+    
+});
+
+</script>
+ 
+</body>
+
+</html>

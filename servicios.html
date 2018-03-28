@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="cyslabs@gmail.com">
+  <title>WingKaL4bs - Cyber Segurity Laboratory</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">WINGKALABS</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="dashboard.php">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="ejercicios.php">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Ejercicios</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="servicios.php">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Servicios</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Servicios</li>
+      </ol>
+      <div class="row">
+        <div class="col-12">
+          <h1>Servicios</h1>
+          
+          <pre>
+PORT      STATE SERVICE         VERSION
+21/tcp    open  ftp             vsftpd 3.0.2                            usuarios(wingkalabs:wingkalabs admin:password Anonymous:Anonymous)
+22/tcp    open  ssh             (protocol 2.0)                          usuarios(wingkalabs:wingkalabs admin:password )
+23/tcp    open  telnet          Linux telnetd                           usuarios(wingkalabs:wingkalabs admin:password)
+25/tcp    open  smtp            Postfix smtpd                           usuarios(contacto:password cliente:12345)
+80/tcp    open  http            Apache httpd 2.4.7 ((Ubuntu))
+110/tcp   open  pop3            Courier pop3d                           usuarios(contacto:password cliente:12345)
+139/tcp   open  netbios-ssn     Samba smbd 3.X (workgroup: WINGKALABS)  usuarios(admin:password anonymous)
+143/tcp   open  imap            Courier Imapd (released 2011)           usuarios(contacto:password cliente:12345)
+389/tcp   open  ldap            (Anonymous bind OK)                     usuario(admin:password)
+445/tcp   open  netbios-ssn     Samba smbd 3.X (workgroup: WINGKALABS)  usuarios(admin:password anonymous)
+631/tcp   open  ipp             CUPS 1.7
+3306/tcp  open  mysql           MySQL 5.5.59-0ubuntu0.14.04.1           usuarios( root:'' usuario:password user:password )
+4000/tcp  open  remoteanything?
+5001/tcp  open  ovm-manager     Oracle VM Manager
+5432/tcp  open  postgresql      PostgreSQL DB                           usuario(postgres:postgres)
+5800/tcp  open  vnc-http        x11vnc                                  usuario(password)
+5900/tcp  open  vnc             VNC (protocol 3.7)                      usuario(password)
+8005/tcp  open  mxi?
+8080/tcp  open  http            Apache Tomcat/Coyote JSP engine 1.1     usuarios(tomcat:tomcat)
+10000/tcp open  http            MiniServ 1.580 (Webmin httpd)           usuarios(admin:password)
+27017/tcp open  mongodb         MongoDB 2.4.9                           usuarios(usuariodb:password mongo:password)
+
+          </pre>
+        </div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>WingKaL4bs - GNU General Public License v3.0</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+  </div>
+</body>
+
+</html>
